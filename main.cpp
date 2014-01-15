@@ -81,9 +81,9 @@ int main(void) {
 	while (true) {
 		int newspeed;
 		cin >> newspeed;
+		setSpeed(MOTOR_ID, newspeed);
 		if (newspeed == 0)
 			break;
-		setSpeed(MOTOR_ID, newspeed);
 	}
 	return 0;
 }
